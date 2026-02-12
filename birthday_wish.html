@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff); /* Soft pink gradient */
+            color: #d5005a; /* Deep pink text */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 192, 203, 0.8); /* Light pink overlay */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5); /* Pink shadow */
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff1493; /* Hot pink */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.5em;
+            color: #c2185b; /* Medium pink */
+        }
+        .cake {
+            font-size: 5em;
+            margin: 20px 0;
+        }
+        .confetti {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .confetti div {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff69b4; /* Pink confetti */
+            animation: fall 5s linear infinite;
+        }
+        .confetti div:nth-child(odd) {
+            background-color: #ffb6c1; /* Lighter pink */
+        }
+        @keyframes fall {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container">
+        <h1>Happy Birthday, [Friend's Name]! 🎉</h1>
+        <div class="cake">🎂</div>
+        <p>Wishing you a day filled with joy, laughter, and all the pink things you love! May your year ahead be as sweet and fabulous as you are. Love you tons! 💖</p>
+        <p>From: [Your Name]</p>
+    </div>
+</body>
+</html>
